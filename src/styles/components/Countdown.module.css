@@ -74,3 +74,15 @@
     background-color: var(--red);
     color: var(--white);
 }
+
+@media (prefers-color-scheme: dark) {
+    .countdownButtonActive:not(:disabled):hover {
+        color: white;
+    }
+    .countdownButton:not(:disabled):hover {
+        color: white;
+    }
+    .countdownButton:disabled {
+        background-color: rgb(134, 54, 145);
+    }
+}
