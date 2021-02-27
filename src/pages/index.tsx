@@ -8,6 +8,7 @@ import { Profile } from '../components/Profile';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import styles from '../styles/pages/Home.module.css';
+import { Main } from 'next/document';
 
 interface HomeProps {
   level: number; 
@@ -15,7 +16,7 @@ interface HomeProps {
   challengesCompleted: number;
 }
 
-export default function Home(props) {
+export default function Home(props: HomeProps) {
   const {level, currentExperience, challengesCompleted} = props;
 
   return (

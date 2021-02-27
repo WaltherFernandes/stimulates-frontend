@@ -22,6 +22,22 @@ html, body {
     --blue-twitter: #2AA9E0;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --white: #56379e;
+        --background: #1b1b1b;
+        --text: #e2e2e2;
+        --gray-light: #e2e2e2;
+        --gray-highlight: #B3B9FF;
+        --title: #e2e2e2;
+        --red: #E83F5B;
+        --green: #4CD62B;
+        --blue: #ffffff;
+        --blue-dark: #4953B8;
+        --blue-twitter: #2AA9E0;
+    }
+}
+
 @media(max-width: 1080px){
     html {
         font-size: 93.75%;
