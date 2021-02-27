@@ -9,7 +9,6 @@
 }
 
 .container section {
-
     flex: 1;
 
     display: grid;
@@ -25,4 +24,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 680px){
+    .container {
+        flex: 1;
+        width: 100%;
+    }
+
+    .container section {
+        margin-top: 42rem;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .experienceBar {
+        padding: 1.4rem;
+
+        position: sticky;
+        top: 0;
+        background-color: var(--background);
+    }
 }
